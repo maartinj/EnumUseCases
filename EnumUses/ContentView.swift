@@ -9,12 +9,14 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var resources = Resource.starterResources
+    @State private var modalType: ModalType? = nil
     var body: some View {
         NavigationView {
             List {
                 ForEach(resources) { resource in
                     HStack {
-                        Text(resource.resourceType.rawValue)
+                        resourceIcon(resource.resourceType)
+                            .font(.largeTitle)
                             .frame(width: 75)
                         VStack(alignment: .leading) {
                             Text(resource.name)
@@ -23,9 +25,10 @@ struct ContentView: View {
                         }
                         Spacer()
                         Button {
-                            
+                            modalType = .editResource((resource, $resources))
                         } label: {
-                            Text("Edit")
+                            SFSymbol.edit
+                                .font(.title3)
                                 .foregroundColor(.accentColor)
                         }
                         .buttonStyle(PlainButtonStyle())
@@ -38,11 +41,30 @@ struct ContentView: View {
             .navigationTitle("Resources")
             .navigationBarItems(trailing:
                                     Button {
-                                        
+                modalType = .createResource($resources)
                                     } label: {
-                                        Text("New")
+                                        SFSymbol.new
+                                            .font(.title2)
                                     }
             )
+            // #1 method
+//            .sheet(item: $modalType) { modalType in
+//                modalType
+//            }
+            // #2 shorter method
+            .sheet(item: $modalType) { $0 }
+        }
+    }
+    func resourceIcon(_ resourceType: Resource.ResourceType) -> SFSymbol {
+        switch resourceType {
+        case .blog:
+            return SFSymbol.blog
+        case .website:
+            return SFSymbol.website
+        case .podcast:
+            return SFSymbol.podcast
+        case .youtube:
+            return SFSymbol.blog
         }
     }
 }

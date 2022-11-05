@@ -14,6 +14,8 @@
 		BBD077AE25DC353700AEBB65 /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD077AD25DC353700AEBB65 /* Resource.swift */; };
 		BBD077B225DC3BEA00AEBB65 /* ResourceForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD077B125DC3BEA00AEBB65 /* ResourceForm.swift */; };
 		BBD077B525DC3D2800AEBB65 /* ResourceFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD077B425DC3D2800AEBB65 /* ResourceFormView.swift */; };
+		E44E56CC2915D65500665B19 /* SFSymbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44E56CB2915D65500665B19 /* SFSymbols.swift */; };
+		E44E56CE2915D93300665B19 /* ModalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44E56CD2915D93300665B19 /* ModalType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		BBD077AD25DC353700AEBB65 /* Resource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
 		BBD077B125DC3BEA00AEBB65 /* ResourceForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceForm.swift; sourceTree = "<group>"; };
 		BBD077B425DC3D2800AEBB65 /* ResourceFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceFormView.swift; sourceTree = "<group>"; };
+		E44E56CB2915D65500665B19 /* SFSymbols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSymbols.swift; sourceTree = "<group>"; };
+		E44E56CD2915D93300665B19 /* ModalType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				BBD077B125DC3BEA00AEBB65 /* ResourceForm.swift */,
 				BBD077B425DC3D2800AEBB65 /* ResourceFormView.swift */,
 				BBD077AD25DC353700AEBB65 /* Resource.swift */,
+				E44E56CB2915D65500665B19 /* SFSymbols.swift */,
+				E44E56CD2915D93300665B19 /* ModalType.swift */,
 				BBD077A125DC348600AEBB65 /* Assets.xcassets */,
 				BBD077A625DC348600AEBB65 /* Info.plist */,
 				BBD077A325DC348600AEBB65 /* Preview Content */,
@@ -148,7 +154,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BBD077AE25DC353700AEBB65 /* Resource.swift in Sources */,
+				E44E56CE2915D93300665B19 /* ModalType.swift in Sources */,
 				BBD077B525DC3D2800AEBB65 /* ResourceFormView.swift in Sources */,
+				E44E56CC2915D65500665B19 /* SFSymbols.swift in Sources */,
 				BBD077B225DC3BEA00AEBB65 /* ResourceForm.swift in Sources */,
 				BBD077A025DC348400AEBB65 /* ContentView.swift in Sources */,
 				BBD0779E25DC348400AEBB65 /* EnumUsesApp.swift in Sources */,
